@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: wb_position_bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+      - MISTRAL_MODEL=${MISTRAL_MODEL:-open-mistral-7b}
+      - MAX_BROWSERS=${MAX_BROWSERS:-5}
+      - QUANTITY_KEYWORDS=${QUANTITY_KEYWORDS:-10}
+      - MAX_POSITIONS=${MAX_POSITIONS:-1000}
+    shm_size: '2gb'
