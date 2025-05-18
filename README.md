@@ -12,7 +12,7 @@ ParserWildberiesBot — это Telegram-бот, который анализир�
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone <URL вашего репозитория>
+   git clone https://github.com/fleeper2133/ParserWildberiesBot.git
    cd ParserWildberiesBot
    ```
 
